@@ -1,6 +1,6 @@
 import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
-import BottomSheet from 'reanimated-bottom-sheet'
+import BottomSheet from './../src/index'
 import Animated from 'react-native-reanimated'
 
 const Lorem = () => (

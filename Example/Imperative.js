@@ -1,6 +1,6 @@
 import React from 'react'
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
-import BottomSheet from 'reanimated-bottom-sheet'
+import BottomSheet from './../src/index'
 
 export default class Example extends React.Component {
   renderInner = () => (

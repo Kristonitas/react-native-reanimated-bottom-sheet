@@ -10,7 +10,7 @@ import {
 } from 'react-native'
 import { BlurView } from 'expo-blur'
 import { Ionicons } from '@expo/vector-icons'
-import BottomSheet from 'reanimated-bottom-sheet'
+import BottomSheet from './../../../src/index'
 import Animated from 'react-native-reanimated'
 import { TouchableWithoutFeedback } from 'react-native-gesture-handler'
 

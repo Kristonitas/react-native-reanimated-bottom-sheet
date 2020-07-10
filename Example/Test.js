@@ -1,6 +1,6 @@
 import React from 'react'
 import { StyleSheet, Text, Button, View } from 'react-native'
-import BottomSheet from 'reanimated-bottom-sheet'
+import BottomSheet from './../src/index'
 
 export default class Example extends React.Component {
   renderInner = () => (
@@ -34,11 +34,11 @@ export default class Example extends React.Component {
       <View style={styles.container}>
         <BottomSheet
           ref={this.bs}
-          snapPoints={[450, 300, '50%', 0]}
+          snapPoints={["100%", 100]}
           renderContent={this.renderInner}
           renderHeader={this.renderHeader}
         />
-        <Button onPress={() => this.bs.current.snapTo(0)} title="0" />
+        {/* <Button onPress={() => this.bs.current.snapTo(0)} title="0" />
         <Button onPress={() => this.bs.current.snapTo(1)} title="1" />
         <Button
           onPress={() => this.bs.current.snapTo(2)}
@@ -47,7 +47,7 @@ export default class Example extends React.Component {
           }}
           title="2"
         />
-        <Button onPress={() => this.bs.current.snapTo(3)} title="3" />
+        <Button onPress={() => this.bs.current.snapTo(3)} title="3" /> */}
       </View>
     )
   }

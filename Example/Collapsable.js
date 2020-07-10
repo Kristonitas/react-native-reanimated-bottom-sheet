@@ -1,6 +1,6 @@
 import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
-import BottomSheet from 'reanimated-bottom-sheet'
+import BottomSheet from './../src/index'
 import Animated from 'react-native-reanimated'
 
 const { block, set, greaterThan, lessThan, Value, cond, sub } = Animated
@@ -88,7 +88,7 @@ export default class Example extends React.Component {
       <View style={styles.container}>
         <BottomSheet
           contentPosition={this.trans}
-          snapPoints={[100, 400]}
+          snapPoints={[100, 400, 600]}
           renderContent={this.renderInner}
         />
       </View>
